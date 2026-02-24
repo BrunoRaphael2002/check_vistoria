@@ -26,12 +26,7 @@ const HeroSection = () => {
           </p>
 
           <div className="hero-buttons">
-          <a
-  href="#"
-  onClick={(e) => {
-    e.preventDefault();
-    scrollToSection("Servicos");
-  }}
+          <a href="#Servicos"
   className="btn-primary"
 >
   Ver Serviços

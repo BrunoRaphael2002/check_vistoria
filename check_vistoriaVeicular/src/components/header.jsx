@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./header.css";
 import { gerarLinkWhatsApp } from "../utils/whatsapp";
-import { scrollToSection } from "../utils/scroll";
+
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,12 +26,12 @@ const Header = () => {
       <div className="container">
         <div className="logo">Check Veicular BR</div>
 
-        <nav className={`nav ${menuOpen ? "active" : ""}`}>
+        <nav >
           <ul className="nav-links">
-            <li><a href="#" onClick={(e) => { e.preventDefault(); handleClick("Home"); }}>Home</a></li>
-            <li><a href="#" onClick={(e) => { e.preventDefault(); handleClick("Servicos"); }}>Serviços</a></li>
-            <li><a href="#" onClick={(e) => { e.preventDefault(); handleClick("Sobre"); }}>Sobre</a></li>
-            <li><a href="#" onClick={(e) => { e.preventDefault(); handleClick("Contato"); }}>Contato</a></li>
+             <li><a href="#Home">Home</a></li>
+        <li><a href="#Sobre">Servicos</a></li>
+         <li><a href="#Servicos">Servicos</a></li>
+          <li><a href="#Contato">Servicos</a></li>
           </ul>
         </nav>
 

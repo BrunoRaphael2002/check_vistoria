@@ -6,7 +6,7 @@ import FAQSection from "./pages/faq";
 import HeroSection from "./pages/hero";
 import ServicesSection from "./pages/service";
 import AboutSection from "./pages/sobre";
-import './App.css'
+
 
 
 function App() {

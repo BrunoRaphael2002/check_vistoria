@@ -1,0 +1,27 @@
+import Benefits from "./components/benefits";
+import Footer from "./components/footer";
+import Header from "./components/header";
+import ContactFormSection from "./pages/contact";
+import FAQSection from "./pages/faq";
+import HeroSection from "./pages/hero";
+import ServicesSection from "./pages/service";
+import AboutSection from "./pages/sobre";
+import './App.css'
+
+
+function App() {
+  return (
+    <>
+      <Header />
+    <HeroSection/>
+    <Benefits/>
+    <AboutSection/>
+    <ServicesSection/>
+    <ContactFormSection/>
+    <FAQSection/>
+    <Footer/>
+    </>
+  );
+}
+
+export default App;

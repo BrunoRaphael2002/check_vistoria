@@ -1,0 +1,125 @@
+.services {
+  padding: 100px 6%;
+  background: #f5f6f8;
+}
+
+.services-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.services h2 {
+  font-size: 2.4rem;
+  margin-bottom: 60px;
+  font-weight: 800;
+  text-align: center;
+  color: #111;
+}
+
+/* GRID */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+}
+
+/* CARD MODERNO */
+.service-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.12);
+  border-color: #ffcc00;
+}
+
+/* IMAGEM */
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.07);
+}
+
+/* CONTEÚDO */
+.service-content {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.service-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.service-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+/* FOOTER DO CARD */
+.service-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.service-price {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #111;
+}
+
+/* BOTÃO MODERNO */
+.service-btn {
+  background: #ffe713;
+  color: #000000;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.service-btn:hover {
+  background: #ffdb12;
+  transform: translateY(-3px);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .services {
+    padding: 70px 6%;
+  }
+
+  .service-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .service-btn {
+    text-align: center;
+    width: 100%;
+  }
+}

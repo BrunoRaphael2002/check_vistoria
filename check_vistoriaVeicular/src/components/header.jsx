@@ -26,12 +26,12 @@ const Header = () => {
       <div className="container">
         <div className="logo">Check Veicular BR</div>
 
-        <nav >
+        <nav className={`nav ${menuOpen ? "active" : ""}`}>
           <ul className="nav-links">
-             <li><a href="#Home">Home</a></li>
-        <li><a href="#Sobre">Servicos</a></li>
-         <li><a href="#Servicos">Servicos</a></li>
-          <li><a href="#Contato">Servicos</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Servicos">Serviços</a></li>
+            <li><a href="#Sobre" >Sobre</a></li>
+            <li><a href="#Contato">Contato</a></li>
           </ul>
         </nav>
 

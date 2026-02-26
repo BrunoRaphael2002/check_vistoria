@@ -1,46 +1,68 @@
 import "./services.css";
 import { gerarLinkWhatsApp } from "../utils/whatsapp";
 
-import multaImg from "../assets/01.jpeg";
-import financiamentoImg from "../assets/01.jpeg";
-import completaImg from "../assets/01.jpeg";
-import sinistroImg from "../assets/01.jpeg";
+import atpve from "../assets/atpve01.png";
+import crlv from "../assets/crlv.png";
+import crv from "../assets/crv.png";
+import multas from "../assets/multas01.png";
+import leilao from '../assets/leilao.png';
+import completo from '../assets/completo.png'
 
 export default function ServicesSection() {
   const services = [
     {
-      title: "Consulta Completa Veicular",
+      title: "Consulta Veicular Completa ",
       description:
         "Consulta completa com histórico detalhado, restrições, débitos, gravame, sinistro e situação atual do veículo.",
-      price: "R$ 39,90",
-      image: completaImg,
+      price: "R$ 49,90",
+      image: completo,
       message:
-        "Olá, vim do site e gostaria de solicitar a Consulta Completa Veicular.",
+        "Olá, vim do site e gostaria de solicitar a Consulta Veicular Completa .",
     },
     {
-      title: "Consulta de Multas e Débitos",
+      title: "Numero do CRV",
       description:
         "Verifique multas, IPVA, licenciamento e outras pendências antes de comprar ou vender seu veículo.",
-      price: "R$ 19,90",
-      image: multaImg,
+      price: "R$ 39,90",
+      image: crv,
       message:
-        "Olá, vim do site e gostaria de consultar Multas e Débitos do meu veículo.",
+        "Olá, vim do site e gostaria de consultar Numero do CRV do meu veículo.",
     },
     {
-      title: "Consulta de Gravame / Financiamento",
+      title: "Consulta de Segunda via da ATPVe",
       description:
         "Descubra se o veículo possui alienação fiduciária ou financiamento ativo registrado.",
-      price: "R$ 24,90",
-      image: financiamentoImg,
+      price: "R$ 49,90",
+      image: atpve,
       message:
         "Olá, vim do site e gostaria de consultar Gravame ou Financiamento.",
     },
     {
-      title: "Consulta de Sinistro e Leilão",
+      title: "Consulta de CRLV Digital",
       description:
         "Saiba se o veículo já passou por leilão, sofreu sinistro ou possui histórico de perda total.",
       price: "R$ 29,90",
-      image: sinistroImg,
+      image: crlv,
+      message:
+        "Olá, vim do site e gostaria de consultar Sinistro e Leilão.",
+    },
+
+      {
+      title: "Consulta de leilão",
+      description:
+        "Saiba se o veículo já passou por leilão, sofreu sinistro ou possui histórico de perda total.",
+      price: "R$ 19.90",
+      image: leilao,
+      message:
+        "Olá, vim do site e gostaria de consultar Sinistro e Leilão.",
+    },
+
+       {
+      title: "Consulta de Debitos e Multas",
+      description:
+        "Saiba se o veículo já passou por leilão, sofreu sinistro ou possui histórico de perda total.",
+      price: "R$ 19,90",
+      image: multas,
       message:
         "Olá, vim do site e gostaria de consultar Sinistro e Leilão.",
     },

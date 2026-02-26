@@ -29,8 +29,8 @@ const Header = () => {
         <nav className={`nav ${menuOpen ? "active" : ""}`}>
           <ul className="nav-links">
             <li><a href="#Home">Home</a></li>
-            <li><a href="#Servicos">Serviços</a></li>
             <li><a href="#Sobre" >Sobre</a></li>
+            <li><a href="#Servicos">Serviços</a></li>
             <li><a href="#Contato">Contato</a></li>
           </ul>
         </nav>

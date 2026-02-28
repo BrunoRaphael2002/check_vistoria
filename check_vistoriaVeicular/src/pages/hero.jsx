@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import "./hero.css";
 
 import heroBg from "../assets/fundo03.png";
@@ -6,11 +6,22 @@ import heroCar from "../assets/10.png";
 import { gerarLinkWhatsApp } from "../utils/whatsapp";
 
 const HeroSection = () => {
+  const [placa, setPlaca] = useState("");
+
+  const handleEnviar = () => {
+    if (!placa) return;
+
+    const mensagem = `Olá, vim do site e gostaria de realizar uma consulta veicular.\nPlaca: ${placa}`;
+
+    window.open(gerarLinkWhatsApp(mensagem), "_blank");
+  };
+
   return (
     <section
       className="hero"
       style={{ backgroundImage: `url(${heroBg})` }}
-    id="Home">
+      id="Home"
+    >
       <div className="hero-overlay" />
 
       <div className="hero-inner">
@@ -25,23 +36,19 @@ const HeroSection = () => {
             veículo antes de comprar. Atendimento rápido e seguro.
           </p>
 
-          <div className="hero-buttons">
-          <a href="#Servicos"
-  className="btn-primary"
->
-  Ver Serviços
-</a>
+          {/* FORMULÁRIO */}
+          <div className="hero-form">
+            <input
+              type="text"
+              placeholder="Digite a placa (ABC1D23)"
+              value={placa}
+              onChange={(e) => setPlaca(e.target.value.toUpperCase())}
+              maxLength={7}
+            />
 
-            <a
-              href={gerarLinkWhatsApp(
-                "Olá, vim do site e gostaria de realizar uma consulta veicular completa. Placa:"
-              )}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary"
-            >
-              Consulta Veicular Completa
-            </a>
+            <button onClick={handleEnviar}>
+              Enviar
+            </button>
           </div>
         </div>
       </div>

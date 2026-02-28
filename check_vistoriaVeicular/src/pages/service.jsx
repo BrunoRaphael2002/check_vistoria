@@ -23,7 +23,7 @@ export default function ServicesSection() {
       title: "Numero do CRV",
       description:
         "Verifique multas, IPVA, licenciamento e outras pendências antes de comprar ou vender seu veículo.",
-      price: "R$ 39,90",
+      price: "R$ 39,90" ,
       image: crv,
       message:
         "Olá, vim do site e gostaria de consultar Numero do CRV do meu veículo.",
@@ -41,10 +41,12 @@ export default function ServicesSection() {
       title: "Consulta de CRLV Digital",
       description:
         "Saiba se o veículo já passou por leilão, sofreu sinistro ou possui histórico de perda total.",
+        note: "⚠ Os valores podem variar dependendo do estado.",
       price: "R$ 29,90",
       image: crlv,
       message:
         "Olá, vim do site e gostaria de consultar Sinistro e Leilão.",
+         
     },
 
       {
@@ -83,6 +85,12 @@ export default function ServicesSection() {
                 <p className="service-description">
                   {service.description}
                 </p>
+
+                {service.note && (
+                 <p className="service-note">
+                       {service.note}
+                                         </p>
+                                                      )}
 
                 <div className="service-footer">
                   <span className="service-price">

@@ -23,7 +23,7 @@ export default function FAQSection() {
     {
       question: "Quanto tempo leva para receber o resultado?",
       answer:
-        "O resultado geralmente é enviado em poucos minutos após a confirmação do pagamento.",
+        "O resultado geralmente é enviado em poucos minutos após a confirmação do pagamento porém dependendo da região pode demorar até 1h.",
     },
     {
       question: "Quais formas de pagamento são aceitas?",

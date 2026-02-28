@@ -102,6 +102,12 @@
   transition: all 0.3s ease;
 }
 
+.service-note {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #d32f2f; /* vermelho */
+  font-weight: 600;
+}
 .service-btn:hover {
   background: #ffdb12;
   transform: translateY(-3px);

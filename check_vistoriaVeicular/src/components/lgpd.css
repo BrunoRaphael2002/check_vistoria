@@ -1,0 +1,58 @@
+.lgpd-section {
+  padding: 80px 20px;
+  background: #f8f9fa;
+}
+
+.lgpd-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lgpd-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.lgpd-intro {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.lgpd-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.lgpd-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.lgpd-card:hover {
+  transform: translateY(-5px);
+}
+
+.lgpd-card h3 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #d32f2f; /* pode ajustar para sua cor principal */
+}
+
+.lgpd-card p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.lgpd-footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #777;
+}

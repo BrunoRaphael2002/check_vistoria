@@ -1,6 +1,7 @@
 import Benefits from "./components/benefits";
 import Footer from "./components/footer";
 import Header from "./components/header";
+import LgpdSection from "./components/lgpd";
 import ContactFormSection from "./pages/contact";
 import TestimonialsSection from "./pages/depoimentos";
 import FAQSection from "./pages/faq";
@@ -21,6 +22,7 @@ function App() {
     <ContactFormSection/>
     <TestimonialsSection/>
     <FAQSection/>
+    <LgpdSection/>
     <Footer/>
     </>
   );

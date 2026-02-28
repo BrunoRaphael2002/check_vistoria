@@ -67,6 +67,51 @@
 
 /* ================= BOTÕES ================= */
 
+/* ================= FORM HERO ================= */
+
+.hero-form {
+  margin-top: 20px;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 500px;
+}
+
+.hero-form input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 10px;
+  background: #f1f1f1;
+  color: #000;
+}
+
+.hero-form input::placeholder {
+  color: #888;
+}
+
+.hero-form button {
+  background: #ffcc00;
+  color: #000;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.hero-form button:hover {
+  background: #e6b800;
+  transform: translateY(-2px);
+}
+
 .hero-buttons {
   display: flex;
   gap: 14px;

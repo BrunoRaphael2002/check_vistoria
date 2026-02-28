@@ -158,16 +158,26 @@
 /* RESPONSIVO */
 @media (max-width: 768px) {
 
+  .testimonial-wrapper {
+    padding: 0 50px; /* cria espaço interno pras setas */
+  }
+
   .testimonial-card {
     padding: 50px 25px;
   }
 
+  .arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+
   .arrow.left {
-    left: -20px;
+    left: 0;
   }
 
   .arrow.right {
-    right: -20px;
+    right: 0;
   }
 
   .testimonials-title {

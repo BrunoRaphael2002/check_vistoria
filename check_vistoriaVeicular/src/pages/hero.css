@@ -230,4 +230,25 @@
     flex-direction: column;
     gap: 12px;
   }
+
+  .hero-form {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 14px;
+    gap: 12px;
+    max-width: 100%;
+  }
+
+  .hero-form input {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .hero-form button {
+    width: 100%;
+    padding: 16px;
+    font-size: 1rem;
+  }
+
 }
+

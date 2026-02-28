@@ -8,7 +8,7 @@ export default function LgpdSection() {
 
         <p className="lgpd-intro">
           Seus dados estão seguros conosco. Trabalhamos em total conformidade
-          com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018),
+          com a <a href=" https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm " target='blank' className='Lei-link'>Lei Geral de Proteção de Dados</a> (LGPD - Lei nº 13.709/2018),
           garantindo segurança, privacidade e transparência em todas as consultas realizadas.
         </p>
 
